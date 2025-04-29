@@ -1,0 +1,277 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+	background-image: url('backgroung.jpg'); /* Remplacez par le chemin de votre image */
+    background-size: cover; /* L'image couvre toute la zone */
+    background-repeat: repeat; /* Évite de répéter l'image */
+
+}
+nav{
+	background-color: #003366; /* Bleu marine */
+    color: white;
+	position: fixed; /* Fixé sur le côté gauche */
+}
+header nav {
+    width: 200px;
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+header nav a.sec{
+	    display: block; /* Les liens s'affichent sous forme de liste verticale */
+		margin: 5px 0;
+}
+
+a.sec {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+	border: 2px solid white;
+	border-radius: 2rem;
+}
+
+a.sec:hover{
+    background-color: white; /* Survol sombre pour les liens */
+	color: #003366;
+}
+
+main {
+    margin-left: 20%; /* Assure un espace dynamique pour la barre de navigation */
+    padding: 20px;
+    width: 80%; /* Contenu principal adapté */
+	
+}
+
+@media screen and (max-width: 600px) {
+    header nav {
+        width: 30%; /* Augmente l'espace pour les petits écrans */
+    }
+    main {
+        margin-left: 30%; /* Ajuste le contenu pour correspondre */
+    }
+}
+
+.cv-button {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 20px;
+    background-color: white;
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.cv-button:hover {
+    background-color: #dbe9f4;
+}
+
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+}
+
+.name {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.contact {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.social-logo {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.contact p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+.topnav {
+  background-color: #003366;  /* Couleur de fond pour la barre du haut */
+  position: fixed;
+  top: 0;
+  left: 200px;  /* Ne pas surcharger la barre de gauche */
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  z-index: 100; /* Assure que la barre reste au-dessus du contenu */
+}
+
+.topnav a {
+  display:flex;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  flex-wrap:wrap;
+  justify-content:space-evenly;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 2rem;
+}
+
+/* Contenu principal */
+main {
+  margin-left: 200px;  /* Décalage par rapport à la barre de gauche */
+  margin-top: 60px;    /* Décalage pour ne pas être recouvert par la barre du haut */
+  padding: 20px;
+}
+
+/* Style pour chaque bloc */
+.block {
+  position: relative;             /* Permet le positionnement absolu du titre */
+  border: 2px solid #ddd;         /* Bordure du bloc */
+  border-radius: 10px;            /* Coins arrondis */
+  padding: 30px 20px 20px 20px;    /* Espace intérieur avec un padding-top augmenté */
+  margin: 20px 0;
+  background-color: #f8f8f8;      /* Fond du bloc, à ajuster selon votre design */
+}
+
+/* Style pour le titre */
+.block h2 {
+  position: absolute;             /* Le titre sera positionné par rapport au bloc */
+  top: -15px;                    /* Positionne le titre au-dessus du bloc */
+  left: 20px;                    /* Décale le titre pour l'aligner avec le contenu */
+  background-color: #f8f8f8;      /* Même couleur que le fond du bloc (ou celle de votre page) */
+  padding: 0 10px;              /* Ajoute un peu d'espace horizontal autour du titre */
+  margin: 0;                     /* Supprime la marge par défaut */
+  font-size: 1.5em;              /* Taille du titre */
+  color: #333;                   /* Couleur du texte */
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Ratio 16:9 */
+  height: 0;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.formations-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 0;
+  color: #555;
+}
+
+.formations-list li {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+
+/* Conteneur des blocs de compétences */
+.competences {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 20px;  /* Modern browsers support gap en flexbox */
+}
+
+/* Style de chaque bloc de compétence */
+.competence-block {
+  flex: 1 ;
+  background-color: #e9f1f7;  /* Fond léger et différent */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 0 10px; /* Ajustez la marge si besoin */
+}
+
+/* Titre de chaque bloc */
+.competence-block h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  color: #333;
+}
+
+/* Liste principale */
+.competence-block ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+/* Liste des sous-items */
+.competence-block ul li {
+  margin-bottom: 5px;
+}
+
+/* Liste imbriquée pour les sous-compétences */
+.competence-block ul li ul {
+  list-style-type: circle;
+  margin: 5px 0 5px 20px;
+  padding-left: 0;
+
+}
+/* Optionnel : personnalisation du titre de catégories */
+.category-title {
+  margin-top: 30px;
+  font-size: 1.5em;
+  color: #333;
+  text-align: center;
+}
+
+/* Conteneur général pour regrouper les boîtes (vous pouvez appliquer un gap entre les boîtes) */
+.interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Style de chaque boîte pour un carré avec fond personnalisé */
+.interest-box {
+  width: 150px;             /* Largeur du carré */
+  height: 150px;            /* Hauteur pour obtenir un carré */
+  background-size: cover;   /* L'image de fond couvrira entièrement la boîte */
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;            /* Pour éviter que le texte touche les bords */
+  color: white;             /* Couleur du texte (assurez-vous qu'elle contraste avec le fond) */
+  font-weight: bold;        /* Met le texte en gras */
+  border: 2px solid #ccc;   /* Bordure discrète */
+  border-radius: 8px;       /* Coins arrondis */
+  text-shadow: 
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
