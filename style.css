@@ -162,10 +162,11 @@ main {
 }
 
 .video-container {
+  display: flex; 
+  justify-content: center; 
   position: relative;
   padding-bottom: 56.25%; /* Ratio 16:9 */
   height: 0;
-  overflow: hidden;
   margin: 20px 0;
 }
 
