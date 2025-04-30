@@ -159,6 +159,7 @@ main {
   margin: 0;                     /* Supprime la marge par défaut */
   font-size: 1.5em;              /* Taille du titre */
   color: #333;                   /* Couleur du texte */
+  border-radius:1rem;
 }
 
 .video-container {
