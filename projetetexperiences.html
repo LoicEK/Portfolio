@@ -17,7 +17,7 @@
 			<div class="contact">
 				<a href="cv_loic.pdf" class="cv-button" download>Télécharger le CV</a>
 				<p>N'HESITEZ PAS A ME CONTACTER:</p>
-				<a href="mailto:lekouekovi@gmail.com"><p>lekouekovi@gmail.com</p></a>
+				<a href="mailto:lekouekovi@gmail.com"><p class="mail" style="color: white;">lekouekovi@gmail.com</p></a>
                 <a href="https://www.linkedin.com/in/loic-ekoue-kovi-795b41308"><img src="linkedin.webp" alt="LinkedIn" class="social-logo" ></a>
                 <a href=" https://github.com/LoicEK"><img src="github.webp" alt="GitHub" class="social-logo" ></a>
 			</div>
@@ -28,19 +28,371 @@
 	<div class="topnav">
 		<a href="#1" class="sec">PROJETS</a>
 		<a href="#2" class="sec">EXPERIENCES</a>
+		<a href="#3" class="sec">AMBITIONS</a>
 	</div>
     <main>
 	 <h1>Projets et Expériences</h1>
         <p>Bienvenue sur la page dédiée à mes projets et expériences !</p>
 		<section class="block">
 		<h2 id=1 >PROJETS</h2>
-		<p>  XX</p>
+					<h3 class="titre">Cryptographie sur Python</h3>
+		<section id="PROJET">
+		  <div class="descrip">
+			<p>
+				Le projet de cryptographie en Python avait pour objectif d'implémenter des méthodes de cryptage et de décryptage de messages en utilisant les techniques de César, Vigenère, Polybe et ROT13. 
+			<ul>
+			<li>Il a fallu d'abord comprendre et coder la méthode de <b>César</b>, qui consiste à décaler chaque lettre du message d'un certain nombre de positions dans l'alphabet. Par exemple, avec un décalage de 3, 'A' devient 'D', 'B' devient 'E', etc.</li>
+			
+			
+			<li>Ensuite, il a été nécessaire d'implémenter la méthode de <b>Vigenère</b>, qui utilise un mot-clé pour déterminer le décalage de chaque lettre. Chaque lettre du mot-clé correspond à un décalage différent, rendant le cryptage plus complexe et plus difficile à casser que celui de César.</li>
+
+			<li>La méthode de <b>Polybe</b> a également été implémentée. Elle utilise une grille de 5x5 pour chiffrer les lettres. Chaque lettre est remplacée par ses coordonnées dans la grille, ce qui permet de transformer le texte en une série de paires de chiffres.</li>
+
+			<li>Enfin, il a fallu coder la méthode <b>ROT13</b>, une variante de César avec un décalage fixe de 13 positions. Cette méthode est particulièrement simple car elle est son propre inverse : appliquer ROT13 deux fois ramène le texte original.</li>
+			</ul>
+			Ce projet a permis de développer des compétences en cryptographie et en programmation Python, tout en offrant une compréhension approfondie des différentes techniques de cryptage et de décryptage.
+			</p>
+		  </div>
+		  <div class="IMG">
+			<img class="i" src="polybius_square_med.jpeg" alt="project view">
+			<img class="i" src="maxresdefault.jpg" alt="project view">
+			<img class="i" src="cesar.png" alt="project view">
+			<img class="i" src="cripto-rot131.jpg" alt="project view">
+			
+			<p class="info">
+			  Ce projet a été <br>réalisé en solo en 2022
+			</p>
+		  </div>
+		</section>
+		
+		<h3 class="titre">Jeu de MORPION</h3>
+			<section id="PROJET">
+			
+			<div class="IMG">
+			<img class="i" src="morpi.png" alt="project view">
+			
+			<p class=info>
+			  Ce projet a été <br>réalisé en solo en 2023
+			</p>
+		  </div>
+		  <div class="descrip">
+			
+			<p>
+			  Le projet consiste en un jeu de morpion développé en Python en utilisant la bibliothèque Pygame. 
+			  Structuré avec la programmation orientée objet, il utilise des classes pour représenter les différentes
+			  composantes du jeu, telles que la grille et les joueurs. La gestion des événements permet de détecter les 
+			  actions de l'utilisateur, comme les clics de souris pour placer les marqueurs sur la grille. L'interface 
+			  graphique, intuitive et interactive, offre une expérience utilisateur agréable. La logique de jeu vérifie 
+			  les conditions de victoire, de défaite et de match nul, assurant une interaction fluide et engageante. 
+			  Ce projet démontre l'application de concepts avancés de programmation pour développer des applications interactives.
+			  Il illustre également une compétence en gestion de projet, de la conception à la réalisation.
+			</p>
+		  </div>
+
+		</section>
+		
+		<h3 class="titre">Jeu 2D avec SDL</h3>
+		<section id="PROJET">
+		  <div class="descrip">
+			<p>
+			  Ce projet consiste en la création d’un jeu-vidéo en 2D avec une interface graphique en C++ en utilisant la bibliothèque SDL. 
+			  Le jeu est structuré de manière modulaire, permettant une gestion efficace des différentes composantes du jeu. 
+			  La bibliothèque SDL est utilisée pour gérer les graphiques, les événements et les sons, offrant une expérience utilisateur immersive. 
+			  Le projet inclut la gestion des entrées utilisateur, permettant de contrôler les personnages et les éléments du jeu. 
+			  Des algorithmes de détection de collision sont implémentés pour gérer les interactions entre les objets du jeu. 
+			  L'interface graphique est conçue pour être intuitive et réactive, facilitant l'interaction avec le jeu. 
+			  Ce projet démontre une compréhension approfondie de la programmation en C++ et de l'utilisation de bibliothèques graphiques.
+			</p>
+		  </div>
+		  <div class="IMG">
+			<img class="i" src="image.gif" alt="project view">
+			<p class="info">
+			  Ce projet a été <br>réalisé en binôme en 2024
+			</p>
+		  </div>
+		</section>
+
+		
+		<h3 class="titre">Gestion des Employés ENEDIS</h3>
+		<section id="PROJET">
+		  <div class="IMG">
+			<img class="i" src="MCDS104.png" alt="project view">
+			<p class="info">
+			  Ce projet a été <br>réalisé en solo en 2024
+			</p>
+		  </div>
+		  <div class="descrip">
+			<p>
+			  Ce projet implique la modélisation de MCD et la traduction en SR pour gérer les employés de l’entreprise ENEDIS. 
+			  La modélisation des données permet de structurer efficacement les informations relatives aux employés. 
+			  Le modèle conceptuel de données (MCD) est utilisé pour représenter les entités et les relations entre elles. 
+			  La traduction en schéma relationnel (SR) permet de créer une base de données relationnelle optimisée.
+			  Ce projet démontre une compétence en modélisation de données.
+			</p>
+		  </div>
+	
+		</section>
+
+		<h3 class="titre">Base de Données SQLite</h3>
+		<section id="PROJET">
+		  <div class="descrip">
+			<p>
+			  Ce projet consiste en la création et la manipulation d’une base de données sur SQLite pour l’association Les Restos du Coeur. 
+			  La base de données est conçue pour gérer efficacement les informations relatives aux bénéficiaires et aux dons ainsi qu'aux bénéficiaires et leur disponibilité. 
+			  Des requêtes SQL sont développées pour insérer, mettre à jour et supprimer des données dans la base.
+			  Des rapports et des analyses de données sont faites pour fournir des informations sur les opérations de l'association. 
+			  Le projet est réalisé en équipe, mettant en avant des compétences en collaboration et en gestion de projet. 
+			  Ce projet démontre une expertise en gestion de bases de données.
+			</p>
+		  </div>
+		  <div class="IMG">
+			<img class="i" src="Capture.PNG" alt="project view">
+			<p class="info">
+			  Ce projet a été <br>réalisé en binôme en 2024
+			</p>
+		  </div>
+		</section>
+
+		<h3 class="titre">Poste de Développement sur Raspberry Pi</h3>
+		<section id="PROJET">
+			<div class="IMG">
+			<img class="i" src="powered-by-raspberry-pi-vector-logo.png" alt="project view">
+			<img class="i" src="raspberry_pi.jpg" alt="project view">
+			<p class="info">
+			  Ce projet a été <br>réalisé en équipe de 3 en 2024
+			</p>
+		  </div>
+		  <div class="descrip">
+			<p>
+			  Le projet avait pour objectif d'installer et de configurer un système de gestion de base de données (SGBD) 
+			  sur un Raspberry Pi, un petit ordinateur monocarte avec un processeur ARM. Pour ce faire, il fallait utiliser un 
+			  Raspberry Pi 400, une carte SD avec un adaptateur, un câble HDMI et un câble réseau avec un adaptateur. Le projet
+			  s'est déroulé en trois étapes principales : il fallait d'abord installer un système d'exploitation (OS), puis créer 
+			  une connexion SSH, et enfin installer et configurer le SGBD. Il fallait choisir Raspberry Pi OS comme système d'exploitation
+			  et configurer la connexion SSH manuellement. Le SGBD installé était MariaDB, et il fallait créer et configurer une base de 
+			  données ainsi que les utilisateurs nécessaires. Enfin, il fallait vérifier le bon fonctionnement de l'installation à l'aide 
+			  d'un script Python fourni. Ce projet a permis de développer des compétences en configuration de systèmes, en gestion de bases 
+			  de données et en résolution de problèmes techniques.
+			</p>
+		  </div>
+	
+		</section>
+
+		<h3 class="titre">Cahier des Charges pour Site Web</h3>
+		<section id="PROJET">
+		  <div class="descrip">
+			<p>
+			  Ce projet consiste en l'écriture d’un cahier des charges pour la création du site Web d’une maison d’édition fictive. 
+			  Le document commence par une introduction, suivie des caractéristiques de l'organisation de la maison d'édition. 
+			  Ensuite, il aborde le micro et macro-environnement de la maison d'édition, en détaillant les éléments internes et 
+			  externes qui influencent son fonctionnement. Une analyse comparative des besoins entre deux sites de maisons d'édition est 
+			  présentée, mettant en évidence les points communs et les différences. Le document liste ensuite les fonctionnalités présentes 
+			  sur différentes pages du site, telles que la page d'actualité, la page des livres de la librairie, la page des auteurs, et la 
+			  page de la maison d'édition. Un diagramme des interactions et un organigramme technique sont également inclus pour illustrer 
+			  les relations et la structure technique du projet.Le cahier des charges détaille les besoins fonctionnels et techniques du site Web. 
+			  Ce projet démontre une capacité à analyser les besoins et à planifier le développement de solutions Web.
+			</p>
+		  </div>
+		  <div class="IMG">
+			<img class="i" src="diag.png" alt="project view">
+			<img class="i" src="site_web.png" alt="project view">
+			<p class="info">
+			  Ce projet a été <br>réalisé en équipe de 4 en 2024
+			</p>
+		  </div>
+		</section>
+
+	<h3 class="titre">Creation de Site Web<br> pour un centre de divertissement fictif</h3>
+		<section id="PROJET">
+		<div class="IMG">
+			<img class="i" src="DS.jpg" alt="project view">
+			<img class="i" src="play.jpg" alt="project view">
+			
+			<p class="info">
+			  Ce projet a été <br>réalisé en binôme en 2024
+			</p>
+		  </div>
+		  <div class="descrip">
+			<p>
+			 Le projet S106, intitulé « Communication Web pour une Activité de Divertissement », avait pour objectif de
+			 créer un site web pour promouvoir un centre de divertissement imaginé par les étudiants. Dans ce cas, 
+			 il a été nécessaire de concevoir un site pour un parc d'attractions futuriste nommé "DREAMER'STEAM", mettant 
+			 en avant des activités liées aux IA et à la réalité virtuelle.
+				Le site web se compose de plusieurs pages, chacune ayant un rôle spécifique :
+				<ul>
+				<li>Page d'accueil : Présente une vue d'ensemble du parc et de ses principales attractions.</li>
+				<li>Page des attractions : Détaille les différentes activités disponibles dans le parc.</li>
+				<li>Page de contact : Fournit les informations nécessaires pour contacter le parc.</li>
+				</ul>
+				Il a fallu créer plusieurs fichiers CSS pour styliser le site, chacun étant dédié
+				à une partie spécifique du site (souven des pages mais aussi des sections comme la navigation)
+				Chaque page et fichier CSS a été conçu pour offrir une expérience utilisateur fluide et attrayante, tout en 
+				reflétant l'identité visuelle futuriste du parc "DREAMER'STEAM".
+			</p>
+		  </div>
+		  
+		</section>
+		
 	   </section>
 	   <section class="block">
 		<h2 id=2 >EXPERIENCES</h2>
-		<p>  XX</p>
-	   </section>
+		<h3 class="titre">EXPERIENCES PRINCIPALES</h3>
 		
+		
+		<section class="PRO">
+		
+		<h4 class="titre2">Stage de découverte et de production – Industrie aéronautique</h3>
+		<div id="PROJET">
+		
+			<div class="IMG">
+			<img class="i" src="rw0146s_900xx5172-2909-0-276.jpg"alt="project view">
+				<img class="i" src="d1fcc52693fd67b17552927a4f612a7b-scaled.jpg" alt="project view">
+		
+				<p class="info">
+				   Juillet 2024 35H/semaine pendant 5 semaines.
+				  Travail sur site dans différentes unités, pas de télé-travail.
+				</p>
+			 </div>
+			 
+			 <div class="descrip">
+				<p>
+				J'ai travaillé pour l'entreprise <a href="https://www.collinsaerospace.com/who-we-are/lang/fr/france">Collins Aerospace</a> sur le site de Saint-Ouen-L'Aumône dans le Val d'Oise.
+				J'ai occupé successivement trois postes différents (pendant 2 semaines pour le premier, 1 et demie pour le second et 1 et demie pour la troisième).
+				J'avais pour différentes missions(aux postes respectifs):
+				<ul>
+					<li>Assistant Responsable d'unité de production: Travail en coopération avec logisticiens et ingénieurs qualités. </li>
+					<li>Assistant Coordinateur d'unité: Observation et réalisation d'opérations de montage d pièces avioniques et rapport sur avancée du montage.</li>
+					<li>Laborantin : Réalisation en équipe d'essais sur pièces avioniques et travail de R&D</li>
+				</ul>
+				En dehors de ces missions j'ai été aussi appeler à suivre différents type de réunions (stand up meeting par exemple) et à suivre des formations sur des logiciels
+				 comme ZeroPapiers(propre au montage de pièces) ou même Marathon (propre aux essais en laboratoire).
+				</p>
+			  </div>
+		</div>
+			  
+		<h4 class="titre2">Employé Polyvalent dans un bar</h3>
+		<div id="PROJET">
+		
+			<div class="IMG">
+				<img class="i" src="danville-envision-landscape-studio-img~a191ddbc0079be73_14-5752-1-eeeab35.jpg" alt="project view">
+		
+				<p class="info">
+				  J'ai acquis cette expérience durant les étés des années de 2015 à 2019 et 2022,2023.
+				</p>
+			 </div>
+			 <div class="descrip">
+				<p>
+				 J'ai travaillé comme employé polyvalent au SouleyMan Bar à Lomé, un établissement tenu par ma famille. 
+				 Mes responsabilités incluaient le service en salle, où j'assurais l'accueil et le service des clients, 
+				 ainsi que la gestion du comptoir, où je préparais et servais les boissons. Il arrivait aussi que je calcule les recttes totales journalières et que je fasse la plonge. Étant un bar familial, 
+				 je n'y travaillais pas sous contrat formel, mais j'ai acquis une expérience précieuse en service à la clientèle et en gestion de bar.
+				</p>
+			  </div>
+			  
+		</div>
+			  
+		</section>
+		
+	
+		
+		<section class="OTHER">
+		<h3 class="titre">AUTRES</h3>
+		
+		<h4 class="titre2">Animation Journée Portes Ouvertes</h3>
+		<div id="PROJET">
+		
+			<div class="IMG">
+				<img class="i" src="cl.jpg" alt="project view">
+				<img class="i" src="1712856154032.jpeg" alt="project view">
+		
+				<p class="info">
+				  AVRIL 2023				  
+				</p>
+			 </div>
+			 <div class="descrip">
+				<p>
+				  J'ai eu l'occasion d'animer une journée portes ouvertes au pôle numérique du Lycée International Cours Lumière. 
+				  Mon rôle consistait à accueillir les visiteurs et à leur offrir une expérience immersive et informative. 
+				  J'ai guidé les visiteurs à travers nos laboratoires informatiques, expliquant les équipements et les technologies disponibles. 
+				  J'ai également présenté des projets réalisés par les élèves, comme des applications mobiles et des systèmes de domotique. 
+				  J'étais disponible pour répondre à toutes les questions concernant notre programme et les opportunités de carrière. 
+				  J'ai organisé des ateliers pratiques pour permettre aux visiteurs de découvrir les compétences numériques enseignées. 
+				  En somme, j'ai créé une expérience enrichissante pour les visiteurs, leur donnant un aperçu complet de ce que le pôle numérique avait à offrir.
+				</p>
+			  </div>
+			  
+		</div>
+		
+		<h4 class="titre2">Organisation de Tournoi de Basket-Ball</h3>
+		<div id="PROJET">
+		
+			<div class="IMG">
+				
+				<img class="i" src="tourney-logo.jpg" alt="project view">
+				<img class="i" src="cl.jpg" alt="project view">
+		
+				<p class="info">
+				  2022,2023				  
+				</p>
+			 </div>
+			 <div class="descrip">
+				<p>
+				 Pendant mes années de lycée, j'ai participé activement à l'organisation de tournois sportifs  (basketball principalement). 
+				 Cette expérience enrichissante m'a permis de développer de nombreuses compétences en gestion d'événements. 
+				 J'ai été impliqué dans la communication notamment avec des publications sur les réseaux sociaux. J'ai également géré les inscriptions des équipes, 
+				 veillant à ce que toutes les informations soient correctement enregistrées. Ensuite, j'ai participé à la vente des tickets. 
+				 La gestion des restaurateurs présents sur les lieux était une autre de mes responsabilités. Il fallait coordonner avec les 
+				 vendeurs de nourriture et de boissons pour s'assurer qu'ils avaient tout ce dont ils avaient besoin. Enfin, j'ai contribué à
+				 l'ambiance sonore du lieu en gérant la musique. Cette expérience m'a appris l'importance du travail d'équipe et de la planification minutieuse 
+				 pour assurer le succès d'un événement.
+				</p>
+			  </div>
+			  
+		</div>
+		
+		<h4 class="titre2">Bénévolat</h3>
+		<div id="PROJET">
+		
+			<div class="IMG">
+				
+				<img class="i" src="Logo-Caritas-Togo.png" alt="project view">
+				<img class="i" src="una.png" alt="project view">
+		
+				<p class="info">
+				  Régulièrement dans les années de 2018 à 2023			  
+				</p>
+			 </div>
+			 <div class="descrip">
+				<p>
+				 J'ai participé à des initiatives de don de biens et d'aide, notamment avec les associations OCDI (paroissiale à Lomé au Togo) 
+				 et Unissons-Nous(fondée et dirigée par une Alumni de mon lycée).
+				 Nous avons collecté et distribué des vêtements, des fournitures scolaires et d'autres articles essentiels aux personnes dans le besoin.
+				 J'ai souvent aidé lors des distributions, assurant que chaque bénéficiaire recevait les articles nécessaires. 
+				 Cette expérience m'a permis de développer des compétences en logistique et en coordination.
+				 Travailler avec l'équipe de bénévoles m'a enseigné la valeur du travail d'équipe et de la solidarité. 
+				 Chaque distribution était une opportunité de créer un impact positif dans la communauté.
+				 J'ai aussi eu l'occasion de sensibiliser les donateurs à l'importance de leurs contributions. 
+				 Cette expérience a renforcé mon engagement envers les actions caritatives et m'a donné une perspective précieuse sur les besoins de notre communauté.
+				</p>
+			  </div>
+			  
+		</div>
+
+		</section>
+		
+	   </section>
+	   <section class="block">
+	   <h2 id=3>AMBITIONS</h2>
+	   <p>
+	   J'ambitionne de faire carrière dans la science des données et l'intelligence artificielle, visant principalement un poste de Data Analyst ou de Data Scientist. 
+	   Je suis également intéressé par le développement d'applications informatiques. Pour atteindre ces objectifs, 
+	   j'aspire à poursuivre mes études pour devenir ingénieur informatique spécialisé dans les données et l'intelligence artificielle, 
+	   ou à obtenir un Master dans ces domaines. De plus, je suis tenté par un doctorat et la recherche en laboratoire ou à l'université, 
+	   car je crois que c'est le meilleur métier pour ceux qui sont passionnés.
+	   <br> Cela étant dit, pour l'heure mon objectif principal est de complèter mon BUT informatique en accumulant le plus d'expériences pertinentes possibles
+	   et en maximisant mes résultats pour mettre toutes les chances de mon côtés quand l'heure sera à la poursuite d'études.
+	   </p>
+	   
     </main>
 </body>
 </html>

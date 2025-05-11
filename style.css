@@ -1,5 +1,20 @@
+  
+  @font-face {
+    font-family: 'OCR A Std';
+    font-style: normal;
+    font-weight: normal;
+    src: local('OCR A Std'), url('OCRAStd.woff') format('woff');
+    }
+	
+    @font-face {
+    font-family: 'TeXGyreAdventor-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('TeXGyreAdventor-Regular'), url('texgyreadventor-regular.woff') format('woff');
+    }
+    
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'TeXGyreAdventor-Regular';
     margin: 0;
     padding: 0;
     display: flex;
@@ -73,6 +88,9 @@ main {
 }
 
 
+.mail:hover{
+	font-size:1rem;
+}
 .profile {
     text-align: center;
     margin-bottom: 20px;
@@ -98,6 +116,13 @@ main {
 .social-logo {
     width: 30px;
     height: 30px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.social-logo:hover{
+	width: 40px;
+    height: 40px;
     margin: 5px;
     display: inline-block;
 }
@@ -158,7 +183,7 @@ main {
   padding: 0 10px;              /* Ajoute un peu d'espace horizontal autour du titre */
   margin: 0;                     /* Supprime la marge par défaut */
   font-size: 1.5em;              /* Taille du titre */
-  color: #333;                   /* Couleur du texte */
+  color: #333;        /* Couleur du texte */
   border-radius:1rem;
 }
 
@@ -227,10 +252,18 @@ main {
   margin: 0;
 }
 
+
 /* Liste des sous-items */
 .competence-block ul li {
   margin-bottom: 5px;
 }
+.competence-block ul img {
+	height: 1.3rem; /* Taille de l'image */
+	width: auto; /* Taille de l'image */
+	margin-right: 0.5rem; /* Espace entre l'image et le texte */
+	vertical-align: middle; /* Aligne l'image au milieu du texte */
+}
+
 
 /* Liste imbriquée pour les sous-compétences */
 .competence-block ul li ul {
@@ -258,8 +291,8 @@ main {
 
 /* Style de chaque boîte pour un carré avec fond personnalisé */
 .interest-box {
-  width: 150px;             /* Largeur du carré */
-  height: 150px;            /* Hauteur pour obtenir un carré */
+  width: 160px;             /* Largeur du carré */
+  height: 160px;            /* Hauteur pour obtenir un carré */
   background-size: cover;   /* L'image de fond couvrira entièrement la boîte */
   background-position: center;
   display: flex;
@@ -276,4 +309,61 @@ main {
      1px -1px 0 black,
     -1px  1px 0 black,
      1px  1px 0 black;
+}
+
+
+
+
+#PROJET {
+    display: flex;
+	flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.IMG {
+    width: 50%;
+    height: auto;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+.descrip{
+	width: 50%;
+    height: auto;
+}
+.i{
+	width: 90%;
+	height: auto;
+    margin: 1rem;
+}
+
+section  p {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+section{
+	 font-size: 1.3rem;
+}
+.titre {
+    font-size: 2.5rem;
+    text-align: center;
+}
+.titre2 {
+    font-size: 1.6rem;
+    text-align: center;
+	border: 2px solid black;
+	border-radius: 1rem;
+}
+
+.info {
+    display: block;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.9);
+	color: white;
+	padding:1rem;
+	font-family: 'OCR A Std';
 }
